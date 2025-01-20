@@ -23,6 +23,17 @@ class Chinese implements IHuman {
     }
 }
 
+class Parson implements IHuman {
+    constructor(name) {
+        this.name = name;
+    }
+
+    speak() : void {
+        console.log(`こんにちは。私は${this.name}です。`);
+    }
+}
+
 new Japanese().speak();
 new American().speak();
 new Chinese().speak();
+new Parson("太郎").speak();
